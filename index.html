@@ -584,7 +584,7 @@ body{
     position:relative;
     background:
     linear-gradient(135deg, rgba(10,14,39,0.8) 0%, rgba(124,58,237,0.3) 50%, rgba(10,14,39,0.8) 100%),
-    url('HISTORIA/11.jpg');
+    url('11.jpg');
     background-size:cover;
     background-position:center;
     background-attachment:fixed;
@@ -1016,7 +1016,7 @@ body{
 <section class="section reveal" id="evento">
     <h3>La Ceremonia</h3>
     <div class="cards">
-        <div class="card location-card" onclick="abrirLightbox('HISTORIA/ENTRADA1.jpg')">
+        <div class="card location-card" onclick="abrirLightbox('ENTRADA1.jpg')">
     <h4>📍 Ubicación</h4>
     <p>Auditorio principal</p>
     <button class="location-btn">
@@ -1126,7 +1126,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const filterButtons = document.getElementById("filterButtons");
     const progressBar = document.getElementById("progressBar");
     const scrollInfo = document.getElementById("scrollInfo");
-    const ruta = "HISTORIA/";
+    const ruta = "/";
 
     function actualizarProgreso() {
         const scrollLeft = gallery.scrollLeft;
@@ -1140,7 +1140,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     gallery.addEventListener("scroll", actualizarProgreso);
 
-    fetch("HISTORIA/lista.json")
+    fetch("lista.json")
     .then(res => {
         if (!res.ok) throw new Error("No se pudo cargar lista.json");
         return res.json();
